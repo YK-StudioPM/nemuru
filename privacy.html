@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー | Nemuru</title>
+<meta name="description" content="Nemuru のプライバシーポリシーです。">
+<style>
+:root { color-scheme: light dark; }
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 24px 20px 80px;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;
+  line-height: 1.9; color: #1f2328; background: #fff;
+  max-width: 760px; margin-inline: auto; word-break: break-word;
+}
+@media (prefers-color-scheme: dark) { body { color: #e6e6e6; background: #16181c; } }
+h1 { font-size: 1.6rem; line-height: 1.5; margin: 0 0 4px; }
+h2 { font-size: 1.15rem; margin: 2.4em 0 .6em; padding-top: .6em; border-top: 1px solid rgba(128,128,128,.3); }
+h3 { font-size: 1rem; margin: 1.6em 0 .4em; }
+.meta { font-size: .85rem; opacity: .7; margin-bottom: 1.6em; }
+.note { border-left: 3px solid #8a8f98; padding: .6em 1em; margin: 1.4em 0; font-size: .9rem; opacity: .85; background: rgba(128,128,128,.08); }
+.important { border-left: 3px solid #d9534f; padding: .8em 1em; margin: 1.4em 0; background: rgba(217,83,79,.08); }
+table { border-collapse: collapse; width: 100%; font-size: .88rem; margin: 1em 0; }
+th, td { border: 1px solid rgba(128,128,128,.35); padding: .5em .6em; text-align: left; vertical-align: top; }
+th { background: rgba(128,128,128,.12); white-space: nowrap; }
+.scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+a { color: #2563eb; } @media (prefers-color-scheme: dark) { a { color: #7aa7ff; } }
+ul, ol { padding-left: 1.4em; }
+footer { margin-top: 4em; padding-top: 1.4em; border-top: 1px solid rgba(128,128,128,.3); font-size: .85rem; opacity: .75; }
+</style>
+</head>
+<body>
+
+<h1>Nemuru プライバシーポリシー</h1>
+<p class="meta">最終更新日: 2026年8月11日 ／ 版: v1.0（公開初版）</p>
+
+<p>本プライバシーポリシー（以下「本ポリシー」）は、<strong>Nemuru</strong>（以下「当方」）が提供するモバイルアプリケーション「Nemuru」（以下「本アプリ」）における利用者情報の取扱いについて定めるものです。</p>
+
+<p>本アプリは、利用者（保護者等の大人）が入力した子どものよびな・今日のできごとをもとにAIが物語を生成し、端末内で読み上げる機能を中心に構成されています。子どもに関する情報を扱うため、当方は取扱いを以下のとおり明示します。<strong>本アプリを利用することで、利用者は本ポリシーの内容に同意したものとみなされます。</strong></p>
+
+<div class="important">
+<strong>本アプリは18歳未満の方のご利用を想定していません。</strong> 本アプリは、保護者等の大人が、子どものために情報を入力・操作することを前提としています。
+</div>
+
+<h2>1. 当方が取得する情報</h2>
+
+<div class="scroll">
+<table>
+<tr><th>種別</th><th>具体的な内容</th><th>取得方法</th></tr>
+<tr><td>よびな</td><td>物語の主役となる子どものよびな（本名でなくてかまいません。最大10文字）</td><td>利用者の入力</td></tr>
+<tr><td>年齢帯</td><td>0〜2歳／3〜4歳／5〜6歳／7歳以上／答えない（既定）のいずれか</td><td>利用者の入力（任意）</td></tr>
+<tr><td>今日のできごと</td><td>物語の題材となる、その日の出来事に関する短い文章</td><td>利用者の入力（<strong>物語生成後、当方のサーバー・データベースには保存されません</strong>）</td></tr>
+<tr><td>生成された物語</td><td>AIが生成した物語の本文・タイトル</td><td>自動生成（Cloud Firestoreに保存）</td></tr>
+<tr><td>作成日時</td><td>各物語の作成日時</td><td>自動</td></tr>
+<tr><td>匿名利用者ID</td><td>Firebase Authentication の匿名認証により発行される識別子（UID）</td><td>自動発行</td></tr>
+<tr><td>購入・課金情報</td><td>購入した商品ID、サブスクリプションの有効状態、RevenueCat が発行する匿名の顧客ID</td><td>RevenueCat 経由</td></tr>
+<tr><td>端末内保存データ</td><td>オンボーディング完了状態などの設定値</td><td>端末内保存</td></tr>
+<tr><td>広告関連情報</td><td>広告識別子、おおよその位置情報（IPアドレスに基づく国・地域レベル）、端末情報、広告の表示・視聴・操作履歴（バナー広告・リワード広告を含む）</td><td>広告事業者（Google AdMob）が取得</td></tr>
+</table>
+</div>
+
+<p>本アプリは、氏名（フルネーム）、住所、電話番号、生年月日、メールアドレスの入力を求めません。</p>
+
+<h2>2. 利用目的</h2>
+<ol>
+<li>物語の生成・保存・表示・再生・削除機能の提供</li>
+<li>有料プラン・無料トライアル・リワード広告視聴に応じた利用制限の管理</li>
+<li>広告の表示（無料プラン利用者のみ）</li>
+<li>不具合の調査、機能改善、利用規約違反への対応</li>
+<li>法令に基づく対応</li>
+</ol>
+
+<h2>3. 【重要】入力内容が外部のAIサービスに送信されること</h2>
+
+<p>物語を生成するために、当方は以下の情報を <strong>Anthropic PBC（米国）が提供する Claude API</strong>（<code>claude-haiku-4-5</code>）に送信します。</p>
+
+<p><strong>送信される情報</strong></p>
+<ul>
+<li>よびな</li>
+<li>年齢帯（選択している場合。未選択の場合は送信しません）</li>
+<li>今日のできごと（自由入力欄の内容）</li>
+<li>（プレミアムプランでシリーズ化機能を利用する場合）直近に生成した物語の本文</li>
+</ul>
+
+<p><strong>送信されない情報</strong></p>
+<ul>
+<li>匿名利用者ID、氏名（フルネーム）、住所、電話番号、メールアドレス、端末識別子</li>
+</ul>
+
+<p><strong>送信先・処理場所</strong>: Anthropic PBC（米国）。日本国外への越境移転が発生します。</p>
+
+<p><strong>保持について</strong>: 当方は Anthropic の API 利用条件に基づき利用しており、当方が把握する限り、API 経由で送信された入力・出力は Anthropic のモデルの学習には使用されません。ただし、不正利用検知等の目的で Anthropic 側に一定期間保持される場合があります。詳細は <a href="https://www.anthropic.com/legal/privacy">Anthropic のプライバシーポリシー</a>をご確認ください。</p>
+
+<p><strong>利用者の選択</strong>: 物語の生成は、利用者が生成を実行した時点で送信が行われます。生成を行わなければ、入力内容が Anthropic に送信されることはありません。</p>
+
+<div class="note">
+<strong>「今日のできごと」の取扱いについて</strong>: 入力いただいた内容は、物語の生成にのみ使用され、生成が完了すると当方のサーバー・データベースには保存されず、破棄されます。
+</div>
+
+<h2>4. 読み上げ機能（端末内処理）について</h2>
+<p>本アプリの読み上げ機能は、端末にインストールされた音声合成エンジン（flutter_tts）により端末内で完結します。<strong>読み上げに関する音声データが、当方または第三者のサーバーへ送信されることはありません。</strong></p>
+
+<h2>5. 第三者サービスの利用</h2>
+<div class="scroll">
+<table>
+<tr><th>サービス</th><th>提供者</th><th>目的</th><th>渡る情報</th><th>ポリシー</th></tr>
+<tr><td>Firebase Authentication（匿名認証）</td><td>Google LLC</td><td>利用者の識別</td><td>匿名UID、端末情報</td><td><a href="https://firebase.google.com/support/privacy">リンク</a></td></tr>
+<tr><td>Cloud Firestore</td><td>Google LLC</td><td>物語データの保存</td><td>物語本文、タイトル、よびな、作成日時</td><td>同上</td></tr>
+<tr><td>Cloud Functions</td><td>Google LLC</td><td>物語生成処理・課金状態の同期</td><td>上記のうちAPI呼び出しに必要な範囲</td><td>同上</td></tr>
+<tr><td>Claude API</td><td>Anthropic PBC</td><td>物語生成</td><td>第3項のとおり</td><td><a href="https://www.anthropic.com/legal/privacy">リンク</a></td></tr>
+<tr><td>RevenueCat</td><td>RevenueCat, Inc.</td><td>課金・サブスクリプション管理</td><td>匿名顧客ID、購入商品ID、購入状態、端末情報</td><td><a href="https://www.revenuecat.com/privacy">リンク</a></td></tr>
+<tr><td>Google AdMob</td><td>Google LLC</td><td>広告配信（バナー広告・リワード広告）</td><td>広告識別子、端末情報、おおよその位置情報、広告の表示・視聴・操作履歴</td><td><a href="https://policies.google.com/technologies/ads">リンク</a></td></tr>
+<tr><td>Google Play 課金</td><td>Google LLC</td><td>決済処理</td><td>決済情報（当方は決済手段の詳細を取得しません）</td><td><a href="https://policies.google.com/privacy">リンク</a></td></tr>
+</table>
+</div>
+<p>これらのサービスの多くは日本国外（主に米国）にサーバーを有しており、利用者情報の越境移転が発生します。</p>
+
+<h2>6. 広告について</h2>
+<p>無料プランでご利用の場合、本アプリは<strong>バナー広告</strong>（入力画面・履歴画面のみ）および<strong>リワード広告</strong>（無料の1日の生成上限に達した後、視聴により追加で物語を生成できる広告）を表示します。</p>
+<ul>
+<li><strong>広告は、物語の生成中および物語の表示・読み上げ中には一切表示しません。</strong></li>
+<li>広告事業者は、広告のパーソナライズおよび効果測定のために、広告識別子等を用いて情報を取得する場合があります。パーソナライズ広告の可否は端末のOS設定で制御できます。</li>
+<li><strong>プレミアムプラン</strong>の利用者には広告を表示しません。</li>
+</ul>
+
+<h2>7. 保存期間・データの削除</h2>
+<ul>
+<li><strong>「今日のできごと」欄に入力された内容は、物語の生成に使用された後、破棄され、当方のサーバー・データベースには保存されません。</strong></li>
+<li>生成された物語（本文・タイトル・作成日時・よびな）は、利用者が削除するか、当方がサービスを終了するまで Cloud Firestore に保存されます。</li>
+<li>個別の物語は、履歴画面の削除操作でいつでも削除できます。</li>
+<li>すべてのデータを削除したい場合は、一括削除機能（設定画面）を提供します。削除後の復元はできません。</li>
+<li>アプリを削除済みの場合など、アプリ内から操作できない場合は、<a href="delete.html">削除リクエストページ</a>または nemuruappinfo1@gmail.com からご依頼いただけます。</li>
+</ul>
+
+<h2>8. 匿名認証によるデータ復旧の制限</h2>
+<p>本アプリはアカウント登録を必要としない<strong>匿名認証</strong>のみを採用しています。</p>
+<ul>
+<li><strong>アプリをアンインストールした場合、端末を初期化した場合、または端末を紛失・変更した場合、それまでに生成・保存した物語データへ二度とアクセスできません。</strong></li>
+<li><strong>データを別の端末へ引き継ぐことはできません。</strong></li>
+<li><strong>当方においても、特定の利用者のデータを復旧・再発行することはできません。</strong></li>
+</ul>
+<p>大切な物語は、PDF絵本化機能（プレミアム）等を用いて、利用者自身で控えを保存してください。</p>
+
+<h2>9. 安全管理措置</h2>
+<ul>
+<li>通信は TLS により暗号化されます。</li>
+<li>Firestore のセキュリティルールにより、各利用者は自身の匿名UIDに紐づくデータのみアクセスできます。</li>
+</ul>
+
+<h2>10. 利用者の権利</h2>
+<p>利用者（保護者）は、当方が保有する自己および入力した子どもの情報について、開示・訂正・削除・利用停止を請求できます。ただし本アプリは匿名認証であるため、請求者と当該データの結びつきを当方が確認できない場合があります。この場合、アプリ内の削除機能をご利用ください。</p>
+<p>EEA／英国の居住者は GDPR に基づく権利、カリフォルニア州の居住者は CCPA/CPRA に基づく権利を有します。当方は利用者情報を金銭的対価を得て販売しません。</p>
+
+<h2>11. 本ポリシーの変更</h2>
+<p>本ポリシーを変更する場合、変更後の内容を本ページに掲載します。重要な変更の場合はアプリ内で通知します。</p>
+
+<h2>12. 運営者情報・お問い合わせ</h2>
+<p>本アプリは <strong>Nemuru</strong> が運営しています。</p>
+<ul>
+<li><strong>所在地</strong>: 〒104-0061 東京都中央区銀座1丁目12番4号 N&amp;E BLD.6F</li>
+<li><strong>お問い合わせ窓口</strong>: nemuruappinfo1@gmail.com</li>
+</ul>
+<p>運営者の氏名および電話番号については、ご請求をいただいた場合、遅滞なく電子メールまたは書面にて開示します。</p>
+
+<h3>保有個人データに関する開示等のご請求</h3>
+<p>メールの件名を「開示等の請求」とし、ご請求の内容とご連絡先をご記入のうえ、上記窓口までご連絡ください。手数料は無料です。</p>
+
+<footer>
+<p><a href="index.html">Nemuru ホーム</a> ／ <a href="terms.html">利用規約</a> ／ <a href="delete.html">データの削除リクエスト</a></p>
+<p>© 2026 Nemuru</p>
+</footer>
+
+</body>
+</html>
